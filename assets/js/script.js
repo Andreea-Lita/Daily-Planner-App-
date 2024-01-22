@@ -1,6 +1,5 @@
 $(function() {
     const currentDayElement = $('#currentDay');
-    const today = dayjs();
-    var todayformatDate = today.format('D-MMMM-YYYY ..dd') //day-month-year ..day names format
+    var todayformatDate = dayjs().format('D-MMMM-YYYY ..ddd') //day-month-year  format
     currentDayElement.text(todayformatDate);
 });
