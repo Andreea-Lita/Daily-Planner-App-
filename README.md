@@ -2,6 +2,12 @@
 # <Your-Project-Title>
 
 ## Description
+ 1. Calendar set up for 9am - 5pm 
+2. Must be able to enter event information on each line. 
+3. Can user enter multiple items per line?
+4. Save button which sends item to local storage and saves
+5. If time, add a complete button and a delete button 
+6. If time, add a way to change to a different day.
 
 Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
 
