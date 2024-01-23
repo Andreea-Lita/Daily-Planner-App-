@@ -1,14 +1,14 @@
-# Daily-Planner-App-Third-Party APIs
-# <Your-Project-Title>
+# Daily-Work-Planner-App
 
 ## Description
- 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+ It is a overview about a work day scheduler that provides access to a simple calendar application.
+ This simple calendar application allows users to create and manage daily schedules by saving events for each hour of the workday. It provides a visual overview of the day's events and helps users stay organized and efficient.
+ Features:
+-Displays current day: The current day is prominently displayed at the top of the calendar for easy reference;
+-Presents timeblocks: Standard business hours (9 AM to 5 PM) are divided into clear timeblocks for structured event planning;
+-Allows event entry: Users can easily add events by clicking on a timeblock and entering text in the provided input field;
+-Saves events in local storage: Events are persisted between page refreshes using local storage, ensuring data continuity;
+-Color-codes timeblocks: Past, present, and future timeblocks are visually distinguished using color-coding for quick visual comprehension.
 
 ## Table of Contents (Optional)
 

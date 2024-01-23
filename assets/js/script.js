@@ -5,31 +5,32 @@ $(function() {
     todayformatDate = dayjs().format('D-MMMM-YYYY ..ddd') //day-month-year  format
     currentDayElement.text(todayformatDate);
 });
-
 $(document).ready(function() {
-    var text;
-    var time;
+    var eventText;
+    var eventTime;
     $(".time-block").on("click", ".saveBtn", function() {
-        text = $(this).siblings(".inp").val();
-        time = $(this).parent().attr("id");
-        // Save text in local storage
-        localStorage.setItem(time, text);
+        // Get the text entered for the event scheduled
+        eventText = $(this).siblings(".inp").val();
+        // Get the time for the event
+        eventTime = $(this).parent().attr("id");
+        // Save event text in local storage
+        localStorage.setItem(eventTime, eventText);
     })
     var timeNow;
-    var blockTime;
+    var scheduledTime;
     //time traker for updateing classes for colors
     function timeTracker() {
-        //get current number of hour.
+        //get current hour.
         timeNow = moment().hour();
         // loop over time blocks
         $(".time-block").each(function() {
-            blockTime = parseInt($(this).attr("id").split("hour")[1]);
-            // To check the time and add the classes for background color
-            if (blockTime < timeNow) {
+            scheduledTime = parseInt($(this).attr("id"));
+            // Checks the time and add the classes for background color
+            if (scheduledTime < timeNow) {
                 $(this).removeClass("future");
                 $(this).removeClass("present");
                 $(this).addClass("past");
-            } else if (blockTime === timeNow) {
+            } else if (scheduledTime === timeNow) {
                 $(this).removeClass("past");
                 $(this).removeClass("future");
                 $(this).addClass("present");
@@ -47,9 +48,9 @@ $(document).ready(function() {
     $("#10 .inp").val(localStorage.getItem("10"));
     $("#11 .inp").val(localStorage.getItem("11"));
     $("#12 .inp").val(localStorage.getItem("12"));
-    $("#1 .inp").val(localStorage.getItem("1"));
-    $("#2 .inp").val(localStorage.getItem("2"));
-    $("#3 .inp").val(localStorage.getItem("3"));
-    $("#9 .inp").val(localStorage.getItem("9"));
-    $("#01 .inp").val(localStorage.getItem("01"));
+    $("#13 .inp").val(localStorage.getItem("13"));
+    $("#14 .inp").val(localStorage.getItem("14"));
+    $("#15 .inp").val(localStorage.getItem("15"));
+    $("#16 .inp").val(localStorage.getItem("16"));
+    $("#17 .inp").val(localStorage.getItem("17"));
 });
