@@ -22,7 +22,7 @@ header {
     padding: 60px;
 }
 
-.description {
+.input {
     white-space: pre-wrap;
 }
 
@@ -41,7 +41,7 @@ header {
     background-color: #ffffff;
     color: #000000;
     border-top: 1px dashed #000000;
-    border-bottom: 1px dashed;
+    border-bottom: 1px dashed gray;
     padding: 10px;
 }
 
@@ -73,6 +73,6 @@ header {
     transition: all 0.3s ease-in-out;
 }
 
-fa fa-save {
-    font-size: 36px;
+.complete {
+    text-decoration: line-through !important;
 }
