@@ -1,13 +1,13 @@
 # Daily-Work-Planner-App
 
 ## Description
- It is a overview about a work day scheduler that provides access to a simple calendar application.
+ It is an overview of a workday scheduler that provides access to a simple calendar application.
  This simple calendar application allows users to create and manage daily schedules by saving events for each hour of the workday. It provides a visual overview of the day's events and helps users stay organized and efficient.
  Features:
 -The current day is prominently displayed at the top of the calendar for easy reference;
--Standard business hours (9 AM to 5 PM) are divided into clear timeblocks for structured event planning;
--Users can easily add events by clicking on a timeblock and entering text in the provided input field;
--Events are saved vin lcal storage and persisted between page refreshes using local storage, ensuring data continuity;
+-Standard business hours (9 AM to 5 PM) are divided into clear time blocks for structured event planning;
+-Users can easily add events by clicking on a time block and entering text in the provided input field;
+-Events are saved in local storage and persisted between page refreshes using local storage, ensuring data continuity;
 -Past, present, and future timeblocks are visually distinguished using color-coding for quick visual comprehension.
 -When refresh page, saved events persists!
 
@@ -18,7 +18,7 @@ Technologies Used:
 -HTML: structures the basic layout and content of the application;
 -CSS: styles the visual appearance and responsiveness of the calendar;
 -JavaScript: powers the dynamic functionality of the app, including: event handling, data manipulation, local storage interactions;
--jQuery: implifies DOM manipulation and event handling;
+-jQuery: simplifies DOM manipulation and event handling;
 -Day.js: provides a lightweight and performant library for working with dates and times!
 Getting started:
 -Clone or download the project repository;
